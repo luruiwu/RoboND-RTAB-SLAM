@@ -181,10 +181,10 @@
       <joint_properties damping="1.0" friction="1.0"/>
   </joint>
 
-  <!-- camera -->
-  <link name="camera">
+  <!-- RGBD camera -->
+  <link name="RGBD_camera">
 
-    <visual name='camera_visual'>
+    <visual name='RGBD_camera_visual'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
         <box size="0.05 0.05 0.05"/>
@@ -192,7 +192,7 @@
       <material name="red"/>
     </visual>
 
-   <collision name='camera_collision'>
+   <collision name='RGBD_camera_collision'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
         <box size="0.05 0.05 0.05"/>
@@ -211,9 +211,9 @@
 
   </link>
 
-  <joint type="fixed" name="camera_joint">
+  <joint type="fixed" name="RGBD_camera_joint">
       <origin xyz="0.2 0 0" rpy="0 0 0"/>
-      <child link="camera"/>
+      <child link="RGBD_camera"/>
       <parent link="chassis"/>
       <axis xyz="1 0 0" rpy="0 0 0"/>
   </joint>
