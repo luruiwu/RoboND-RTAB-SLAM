@@ -75,7 +75,6 @@
 
   <!-- hokuyo -->
   <gazebo reference="hokuyo">
-    
     <sensor type="ray" name="head_hokuyo_sensor">
       <pose>0 0 0 0 0 0</pose>
       <visualize>false</visualize>
