@@ -22,9 +22,9 @@
     <pose>0 0 0.1 0 0 0</pose>
 
     <visual name='chassis_visual'>
-      <origin xyz="0 0 0.0125" rpy=" 0 0 0"/>
+      <origin xyz="0 0 0.025" rpy=" 0 0 0"/>
       <geometry>
-        <box size=".4 .2 .125"/>
+        <box size=".4 .2 .15"/>
       </geometry>
       <material name="green"/>
     </visual>
@@ -40,11 +40,20 @@
     </inertial>
 
     <collision name='collision'>
-      <origin xyz="0 0 0" rpy=" 0 0 0"/> 
+      <origin xyz="0 0 0.025" rpy=" 0 0 0"/> 
       <geometry>
-        <box size=".4 .2 .1"/>
+        <box size=".4 .2 .15"/>
       </geometry>
     </collision>
+
+    <!-- hokuyo base -->
+    <visual name='hokuyo_base_visual'>
+      <origin xyz="0 0 0.025" rpy=" 0 0 0"/>
+      <geometry>
+        <box size=".4 .2 .15"/>
+      </geometry>
+      <material name="green"/>
+    </visual>
 
     <!-- back_caster_collision -->
 
@@ -209,7 +218,7 @@
   </link>
 
   <joint type="fixed" name="RGBD_camera_joint">
-      <origin xyz="0.2 0 0.125" rpy="0 0 0"/>
+      <origin xyz="0.2 0 0.15" rpy="0 0 0"/>
       <child link="RGBD_camera"/>
       <parent link="chassis"/>
       <axis xyz="1 0 0" rpy="0 0 0"/>
@@ -227,7 +236,7 @@
     <collision name='hokuyo_collision'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <box size="0.05 0.1 0.1"/>
+        <box size="0.05 0.1 0.75"/>
       </geometry>
     </collision>
 
@@ -243,7 +252,7 @@
   </link>
 
   <joint type="fixed" name="hokuyo_joint">
-      <origin xyz="0.1 0 0.1" rpy="0 0 0"/>
+      <origin xyz="0.1 0 0.2" rpy="0 0 0"/>
       <child link="hokuyo"/>
       <parent link="chassis"/>
       <axis xyz="1 0 0" rpy="0 0 0"/>
