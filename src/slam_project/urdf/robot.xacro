@@ -223,17 +223,24 @@
       </geometry>
     </visual>
 
-    <visual name='hokuyo_base_visual'>
-      <origin xyz="0 0 -0.075" rpy=" 0 0 0"/>
+    <collision name='hokuyo_collision'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.076"/>
+        <box size="0.05 0.05 0.075"/>
+      </geometry>
+    </collision>
+
+    <visual name='hokuyo_base_visual'>
+      <origin xyz="0 0 -0.0925" rpy=" 0 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 0.115"/>
       </geometry>
     </visual>
 
-    <collision name='hokuyo_collision'>
-      <origin xyz="0 0 -0.0375" rpy=" 0 0 0"/>
+    <collision name='hokuyo_base_collision'>
+      <origin xyz="0 0 -0.0925" rpy=" 0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.15"/>
+        <box size="0.05 0.05 0.115"/>
       </geometry>
     </collision>
 
@@ -249,7 +256,7 @@
   </link>
 
   <joint type="fixed" name="hokuyo_joint">
-      <origin xyz="0.1 0 0.2125" rpy="0 0 0"/>
+      <origin xyz="0.1 0 0.25" rpy="0 0 0"/>
       <child link="hokuyo"/>
       <parent link="chassis"/>
       <axis xyz="1 0 0" rpy="0 0 0"/>
