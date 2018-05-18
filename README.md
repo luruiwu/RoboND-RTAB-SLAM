@@ -55,16 +55,9 @@ $ roslaunch slam_project rviz.launch
 ```
 ## Debugging:
 
-### ROS Graph
-To see the ROS graph run the following command:
-
-```bash
-$ rqt_graph
-```
-<p align="center"> <img src="./misc/rosgraph.png"> </p>
-
 ### Debugging with Transform Frames
-To generate tf map run the following command:
+
+The `tf` library allows you to debug your coordinate frames (or the tf tree) in several ways. `view_frames` will create a graphical representation of that tree, providing you with a broad view of how different frames (or links) in your setup connect to each other.
 
 ```bash
 $ rosrun tf view_frames
@@ -73,17 +66,39 @@ The above will create a PDF file that will depict your tf tree as shown below.
 
 <p align="center"> <img src="./misc/tf_map.png"> </p>
 
-The tf library also allows you to dynamically collect and display information between two transforms using tf_monitor.
+The `tf` library also allows you to dynamically collect and display information between two transforms using `tf_monitor`.
 
 ```bash
 $ rosrun tf tf_monitor frame_1 frame_2
 ```
 
-### Image View
-To view image from RGB camera and RGB depth Camera:
+### ROSWTF
+
+Another debugging tool under the `tf` library that is useful for debugging your setup is `roswtf`. To see the ROS graph run the following command:
+
+```bash
+$ rqt_graph
+```
+<p align="center"> <img src="./misc/rosgraph.png"> </p>
+
+`roswtf` will examine and analyze the setup or the graph above, including any running nodes and environment variables, and warn you about any potential issues or errors.
+
+```bash
+$ roswtf
+```
+
+### Debugging with rqt_console
+
+'rqt_console' aggregates all of the log messages and allows you to sort them.
+
+```bash
+$ rqt_console
+```
+
+### Image View using rqt_image_view
+
+`rqt_image_view` is a great tool to visualize images streaming from camera and depth maps from sensors. Use it to make sure you are properly receiving the data you want on its specific topic.
 
 ```bash
 $ rqt_image_view
 ```
-
-Then Select 
