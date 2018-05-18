@@ -14,8 +14,48 @@ $ sudo apt-get install ros-kinetic-rtabmap ros-kinetic-rtabmap-ros
 
 <p align="center"> <img src="./misc/robot.png"> </p>
 
+## Launching
 
-## ROS Graph
+### 1- Launch the gazebo world and your robot.
+
+Empty World:
+```bash
+$ roslaunch slam_project empty_world.launch
+```
+
+Kitchen World:
+```bash
+$ roslaunch slam_project kitchen_world.launch
+```
+
+Personal World:
+```bash
+$ roslaunch slam_project personal_world.launch
+```
+
+### 2- Launch your teleop node.
+```bash
+$ roslaunch slam_project teleop.launch
+```
+
+### 3- Launch your mapping node.
+```bash
+$ roslaunch slam_project mapping.launch
+```
+
+or for localization:
+
+```bash
+$ roslaunch slam_project localization.launch
+```
+
+### 4- Launch Rviz.
+```bash
+$ roslaunch slam_project rviz.launch
+```
+## Debugging:
+
+### ROS Graph
 To see the ROS graph run the following command:
 
 ```bash
@@ -23,7 +63,7 @@ $ rqt_graph
 ```
 <p align="center"> <img src="./misc/rosgraph.png"> </p>
 
-## Debugging with Transform Frames
+### Debugging with Transform Frames
 To generate tf map run the following command:
 
 ```bash
@@ -39,7 +79,7 @@ The tf library also allows you to dynamically collect and display information be
 $ rosrun tf tf_monitor frame_1 frame_2
 ```
 
-## Image View
+### Image View
 To view image from RGB camera and RGB depth Camera:
 
 ```bash
