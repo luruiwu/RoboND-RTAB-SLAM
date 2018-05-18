@@ -15,5 +15,29 @@ To see the ROS graph run the following command:
 ```bash
 $ rqt_graph
 ```
-
 <p align="center"> <img src="./misc/rosgraph.png"> </p>
+
+## Debugging with Transform Frames
+To generate tf map run the following command:
+
+```bash
+$ rosrun tf view_frames
+```
+The above will create a PDF file that will depict your tf tree as shown below.
+
+<p align="center"> <img src="./misc/tf_map.png"> </p>
+
+The tf library also allows you to dynamically collect and display information between two transforms using tf_monitor.
+
+```bash
+$ rosrun tf tf_monitor frame_1 frame_2
+```
+
+## Image View
+To view image from RGB camera and RGB depth Camera:
+
+```bash
+$ rqt_image_view
+```
+
+Then Select 
