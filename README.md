@@ -9,6 +9,12 @@ To install `rtabmap_ros`
 $ apt-get udpate
 $ sudo apt-get install ros-kinetic-rtabmap ros-kinetic-rtabmap-ros
 ```
+
+## Robot Model
+
+<p align="center"> <img src="./misc/robot.png"> </p>
+
+
 ## ROS Graph
 To see the ROS graph run the following command:
 
