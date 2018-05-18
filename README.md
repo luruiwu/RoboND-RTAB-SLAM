@@ -102,3 +102,10 @@ $ rqt_console
 ```bash
 $ rqt_image_view
 ```
+### RTAB Database Analysis
+
+The rtabmap-databaseViewer is a great tool for exploring your database when you are done generating it. It is isolated from ROS and allows for complete analysis of your mapping session. This is how you will check for loop closures, generate 3D maps for viewing, extract images, check feature mapping rich zones, and much more!
+
+```bash
+$ rtabmap-databaseViewer ~/.ros/rtabmap.db
+```
