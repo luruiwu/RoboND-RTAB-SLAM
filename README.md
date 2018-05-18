@@ -109,3 +109,7 @@ The rtabmap-databaseViewer is a great tool for exploring your database when you 
 ```bash
 $ rtabmap-databaseViewer ~/.ros/rtabmap.db
 ```
+
+### Real time mapping visualization
+
+Another tool that you can use is rtabmapviz, which is an additional node for real time visualization of feature mapping, loop closures, and more. It’s not recommended to use this tool while mapping in simulation due to the computing overhead. rtabmapviz is great to deploy on a real robot during live mapping to ensure that you are getting the necessary features to complete loop closures.
