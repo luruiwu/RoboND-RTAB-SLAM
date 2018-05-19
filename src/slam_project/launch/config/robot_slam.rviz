@@ -57,6 +57,10 @@ Visualization Manager:
       Enabled: true
       Links:
         All Links Enabled: true
+        Depth_camera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
@@ -299,9 +303,9 @@ Visualization Manager:
       Node filtering angle (degrees): 0
       Node filtering radius (m): 0
       Position Transformer: XYZ
-      Size (Pixels): 3
-      Size (m): 0.00999999978
-      Style: Points
+      Size (Pixels): 4
+      Size (m): 0.0399999991
+      Style: Squares
       Topic: /rtabmap/mapData
       Unreliable: false
       Use Fixed Frame: true
