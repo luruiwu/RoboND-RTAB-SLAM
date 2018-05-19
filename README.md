@@ -159,6 +159,15 @@ $ rqt_console
 ```bash
 $ rqt_image_view
 ```
+following is output of rgb image
+
+<p align="center"> <img src="./misc/rqtimage_rgb.png"> </p>
+
+and output of depth image
+
+<p align="center"> <img src="./misc/rqtimage_depth.png"> </p>
+
+
 ### RTAB Database Analysis
 
 The rtabmap-databaseViewer is a great tool for exploring your database when you are done generating it. It is isolated from ROS and allows for complete analysis of your mapping session. This is how you will check for loop closures, generate 3D maps for viewing, extract images, check feature mapping rich zones, and much more!
