@@ -88,7 +88,7 @@ $ roswtf
 ```
 Sample output is as following:
 
-```bash
+```text
 $ roswtf
 Loaded plugin tf.tfwtf
 No package or stack in context
