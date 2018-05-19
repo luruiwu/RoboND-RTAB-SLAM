@@ -24,7 +24,4 @@
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" 
   output="screen" args="-urdf -param robot_description -model robot"/>
 
-  <!--launch rviz-->
-  <!-- <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d $(find slam_project)/launch/config/empty.rviz"/> -->
-
 </launch>
