@@ -86,6 +86,63 @@ $ rqt_graph
 ```bash
 $ roswtf
 ```
+Sample output is as following:
+
+```bash
+$ roswtf
+Loaded plugin tf.tfwtf
+No package or stack in context
+================================================================================
+Static checks summary:
+
+Found 1 warning(s).
+Warnings are things that may be just fine, but are sometimes at fault
+
+WARNING ROS_HOSTNAME may be incorrect: ROS_HOSTNAME [MuthDT2] resolves to [127.0.1.1], which does not appear to be a local IP address ['127.0.0.1', '192.168.1.117', '172.17.0.1'].
+
+================================================================================
+Beginning tests of your ROS graph. These may take awhile...
+analyzing graph...
+... done analyzing graph
+running graph rules...
+... done running graph rules
+running tf checks, this will take a second...
+... tf checks complete
+
+Online checks summary:
+
+Found 2 warning(s).
+Warnings are things that may be just fine, but are sometimes at fault
+
+WARNING The following node subscriptions are unconnected:
+ * /rtabmap/rtabmap:
+   * /rtabmap/user_data_async
+   * /rtabmap/initialpose
+   * /rtabmap/goal
+   * /rtabmap/move_base/status
+   * /rtabmap/global_pose
+   * /rtabmap/goal_node
+   * /rtabmap/move_base/feedback
+   * /rtabmap/move_base/result
+ * /gazebo:
+   * /gazebo/set_link_state
+   * /gazebo/set_model_state
+ * /rviz:
+   * /move_base/global_costmap/costmap_updates
+   * /mobile_base/sensors/bumper_pointcloud
+   * /move_base/local_costmap/costmap_updates
+   * /particlecloud
+   * /map_updates
+   * /move_base/TrajectoryPlannerROS/local_plan
+   * /move_base/local_costmap/costmap
+   * /move_base/TrajectoryPlannerROS/global_plan
+   * /move_base/global_costmap/costmap
+
+WARNING These nodes have died:
+ * urdf_spawner-6
+
+```
+
 
 ### Debugging with rqt_console
 
