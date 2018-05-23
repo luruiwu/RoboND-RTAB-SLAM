@@ -75,7 +75,7 @@ The `tf` library also allows you to dynamically collect and display information 
 $ rosrun tf tf_monitor frame_1 frame_2
 ```
 
-### ROSWTF
+### roswtf/rqt_graph
 
 Another debugging tool under the `tf` library that is useful for debugging your setup is `roswtf`. To see the ROS graph run the following command:
 
@@ -182,3 +182,20 @@ $ rtabmap-databaseViewer ~/.ros/rtabmap.db
 ### Real time mapping visualization
 
 Another tool that you can use is rtabmapviz, which is an additional node for real time visualization of feature mapping, loop closures, and more. It’s not recommended to use this tool while mapping in simulation due to the computing overhead. rtabmapviz is great to deploy on a real robot during live mapping to ensure that you are getting the necessary features to complete loop closures.
+
+### Kitchen World 3D Map
+
+<p align="center"> <img src="./misc/kitchen_3d.png"> </p>
+
+### Kitchen World 2D Map
+
+<p align="center"> <img src="./misc/kitchen_2d.png"> </p>
+
+### Personal World 3D Map
+
+<p align="center"> <img src="./misc/personal_3d.png"> </p>
+
+### Personal World 2D Map
+
+<p align="center"> <img src="./misc/personal_2d.png"> </p>
+
