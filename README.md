@@ -2,7 +2,7 @@
 Create a 2D occupancy grid and 3D octomap from a provided ROS simulated environment using RTAB Slam
 
 
-## Install
+## Install RTAB-Map package
 To install `rtabmap_ros`
 
 ```bash
@@ -27,11 +27,14 @@ Kitchen World:
 ```bash
 $ roslaunch slam_project kitchen_world.launch
 ```
+<p align="center"> <img src="./misc/kitchen_world.jpg"> </p>
 
 Personal World:
 ```bash
 $ roslaunch slam_project personal_world.launch
 ```
+<p align="center"> <img src="./misc/personal_world.jpg"> </p>
+
 
 ### 2- Launch your teleop node.
 ```bash
