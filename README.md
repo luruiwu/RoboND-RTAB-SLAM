@@ -185,7 +185,11 @@ Another tool that you can use is rtabmapviz, which is an additional node for rea
 
 ### Kitchen World 3D Map
 
-<p align="center"> <img src="./misc/kitchen_3d.png"> </p>
+<p align="center"> <img src="./misc/kitchen_3d_1.png"> </p>
+
+<p align="center"> <img src="./misc/kitchen_3d_2.png"> </p>
+
+<p align="center"> <img src="./misc/kitchen_3d_3.png"> </p>
 
 ### Kitchen World 2D Map
 
