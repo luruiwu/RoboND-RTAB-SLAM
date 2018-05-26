@@ -36,8 +36,8 @@
 
         <!-- Loop Closure Detection -->
         <!-- 0=SURF 1=SIFT 2=ORB 3=FAST/FREAK 4=FAST/BRIEF 5=GFTT/FREAK 6=GFTT/BRIEF 7=BRISK 8=GFTT/ORB 9=KAZE. -->
-        <param name="Kp/DetectorStrategy" type="string" value="0"/> 
-        <param name="Vis/FeatureType"     type="string" value="0"/>
+        <param name="Kp/DetectorStrategy" type="string" value="4"/> 
+        <param name="Vis/FeatureType"     type="string" value="4"/>
 
         <!-- Maximum visual words per image (bag-of-words) -->
         <param name="Kp/MaxFeatures" type="string" value="400"/>  
