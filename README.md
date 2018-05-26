@@ -197,7 +197,11 @@ Another tool that you can use is rtabmapviz, which is an additional node for rea
 
 ### Personal World 3D Map
 
-<p align="center"> <img src="./misc/personal_3d.png"> </p>
+<p align="center"> <img src="./misc/personal_3d_1.png"> </p>
+
+<p align="center"> <img src="./misc/personal_3d_2.png"> </p>
+
+<p align="center"> <img src="./misc/personal_3d_3.png"> </p>
 
 ### Personal World 2D Map
 
