@@ -210,3 +210,7 @@ Another tool that you can use is rtabmapviz, which is an additional node for rea
 Use the following link to download the full rtabmap databases for both kitchen world and personal world
 
 https://s3-ap-southeast-1.amazonaws.com/muthanna/rtab_db.zip
+
+### Kitchen 3D Map video
+
+[![test video](http://img.youtube.com/vi/8ZEMowDuN0k/0.jpg)](http://www.youtube.com/watch?v=8ZEMowDuN0k)
